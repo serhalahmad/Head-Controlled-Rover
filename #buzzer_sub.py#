@@ -1,0 +1,23 @@
+#!//home/pi/Desktop/Gaze/bin/python3                                                                   
+import rospy # Python library for ROS                                                                  
+from std_msgs.msg import Float64
+
+def callback(data):
+    
+  # Output debugging information to the terminal                                                       
+  rospy.loginfo("Receiving Ultrasonic Sensor Data")
+
+def receive_message():
+
+    rospy.init_node('buzzer_sub_py',anonymous=True)
+
+  # Node is subscribing to the video_frames topic                                                      
+  rospy.Subscriber('buzzer_sub', Float64, callback)
+
+  # spin() simply keeps python from exiting until this node is stopped                                 
+  rospy.spin()
+
+def main():
+    receive_message()
+  
+    if __name__ == '__main__'

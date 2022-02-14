@@ -1,0 +1,38 @@
+#!/home/pi/Desktop/Gaze/bin/python3
+import rospy
+import ultrasonic
+from std_msgs.msg import Float64
+
+
+
+
+def publish_message():
+
+  pub = rospy.Publisher('ultrasonic_pub', Float64, queue_size=10)
+
+  # Tells rospy the name of the node.                                                                                                                                                                                                         
+  # Anonymous = True makes sure the node has a unique name. Random                                                                                                                                                                            
+  # numbers are added to the end of the name.                                                                                                                                                                                                 
+  rospy.init_node('ultrasonic_py', anonymous=True)
+
+  # Go through the loop 30 times per second                                                                                                                                                                                                   
+  rate = rospy.Rate(30) #30 Hz                                                                                                                                                                                                                
+  ultra = ultrasonic.Ultrasonic(24,25)
+  # While ROS is still running.                                                                                                                                                                                                               
+  while not rospy.is_shutdown():
+      rospy.loginfo('Publishing Ultrasonic data')
+      pub.publish(ultra.get_distance())
+      rate.sleep()
+
+
+def main():
+
+    try:
+        publish_message()
+    except rospy.ROSInterruptException:
+        pass
+
+
+if __name__ == '__main__':
+    main()
+
