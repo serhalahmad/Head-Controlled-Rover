@@ -1,4 +1,6 @@
 # Head-Controlled Rover
+<img src="Rover.png" alt="Rover" title="Rover">
+
 ## Description
 This project enables quadriplegic patients to navigate a wheelchair by using only their head movement.
 A prototype of the functionality is implemented and demonstrated using a Raspberry Pi 3 Model B and a Rover 5.
