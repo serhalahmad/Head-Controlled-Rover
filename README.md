@@ -30,7 +30,7 @@ The codes running on the PC
 
 
 ### Web-interface
-![image](https://user-images.githubusercontent.com/97162452/168884268-b0849145-5019-47c7-a1f1-1673ee2dcc84.png)0
+![image](https://user-images.githubusercontent.com/97162452/168884268-b0849145-5019-47c7-a1f1-1673ee2dcc84.png)
 #### Features
 * Sends the patients vitals (heart beat - pulse) to a web interface
 * Displays the stream from the Rover and PC
