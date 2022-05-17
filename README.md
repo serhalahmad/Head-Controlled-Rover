@@ -1,5 +1,6 @@
 # Head-Controlled Rover
 <img src="Rover.png" alt="Rover" title="Rover">
+Done by Ahmad Serhal, Jad Farhat, Jana Kerbaj, and Majd Al Kontar
 
 ## Description
 This project enables quadriplegic patients to navigate a wheelchair by using only their head movement.
