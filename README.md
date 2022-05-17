@@ -6,7 +6,7 @@ This project enables quadriplegic patients to navigate a wheelchair by using onl
 A prototype of the functionality is implemented and demonstrated using a Raspberry Pi 3 Model B and a Rover 5.
 The current commands the patient can give are moving forward, moving backward, turning left, and turning right.
 The Rover is also equipped with an ultrasonic sensor which acts as a safety mechanism that stops the Rover and triggers a buzzer in case an obstacle is detected.
-For this prototype the user can control the rover by sitting infront of the PC and moving their head to control the Rover while viewing the camera feed the Rover is sending to the PC. Also, a sign was added to activate the steering process.
+For this prototype the user can control the rover by sitting infront of the PC and moving their head to control the Rover while viewing the camera feed the Rover is sending to the PC. Also, a sign was added to activate the steering process. This sign is blinking twice fast in 2 seconds.
 
 
 ## Hardware Connections
