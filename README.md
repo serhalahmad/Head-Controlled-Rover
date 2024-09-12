@@ -20,3 +20,21 @@ For this prototype the user can control the rover by sitting infront of the PC a
 The `video_pub_py` node is running on the PC and computates the action that the user wants to execute and sends this command to `n__motor_run_py` which is running on the rover.
 The `n__ultrasonic_py` node is running on the Rover and publishes to the motor node and the buzzer node.
 The `n__rover_pub_py` node sends the video frames from the Rover to the PC `rover_frames`.
+
+## Branches
+
+### RPI
+The codes running on the Raspberry Pi
+
+### PC
+The codes running on the PC
+
+
+### Web-interface
+![image](https://user-images.githubusercontent.com/97162452/168884268-b0849145-5019-47c7-a1f1-1673ee2dcc84.png)
+#### Features
+* Sends the patients vitals (heart beat - pulse) to a web interface
+* Displays the stream from the Rover and PC
+* Shows real-time patient vitals
+* Tabulates the vitals received with timestamps
+* Shows the messages conveyed by the patient as alerts
